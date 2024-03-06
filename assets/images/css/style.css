@@ -1,6 +1,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+    :root{
+        --color-destak:#aa5959;
+        --color-black: #1B1B1B;
+        --color-white: #ffffff;
+        --font-tittle: "Righteous", sans-serif;
+        --font-body: "Roboto", sans-serif;
+    }
 header::before{ 
         content: "";
     background-image: url("../fundo.png");
@@ -14,16 +20,44 @@ header::before{
 
 h1{
     font-family: "Righteous", sans-serif;
-    color:white;
-    font-size: 40px;
+    color:rgb(255, 255, 255);
+    font-size: 50px;
     font-weight: 700;
 
 }
 
 h2{
-    color:white;
+    color:rgb(255, 255, 255);
     font-family: "Roboto", sans-serif;
     font-size: 30px;
     font-weight: 400;
 }
+#secao-apresentacao {
+    display:flex;
+    flex-direction: column;
+    padding: 32rem; 
+    /* 1rem = 16px */
+}
 
+#secao-apresentacao img{    
+    border-radius: 50%;
+
+}
+
+#texto-apresentacao img{
+    color: var(--color-black)
+
+}
+#texto-apresentacao h2{
+    font-size: 2.5rem;
+    font-family: var(--font-tittle);
+    flex-direction: column;
+    color: #000000;
+}
+
+#texto-apresentacao p{
+    font-size: 1.5rem;
+    font-family: var(--font-body);
+    flex-direction: column;
+    color: #000000;
+}
