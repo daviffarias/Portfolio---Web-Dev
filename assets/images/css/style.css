@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
     :root{
-        --color-destak:#aa5959;
+        --color-destak:#000000;
         --color-black: #1B1B1B;
         --color-white: #ffffff;
         --font-tittle: "Righteous", sans-serif;
@@ -31,7 +31,7 @@ h1{
 }
 
 h2{
-    color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
     font-family: "Roboto", sans-serif;
     font-size: 30px;
     font-weight: 400;
@@ -101,4 +101,34 @@ h2{
 .cord:hover .image-wrapper{
     opacity: 30%;
     transition: opacity .5s;
+}
+#secao-orcamento{
+    height: 100vh;
+    padding: 3rem;
+}
+#secao-orcamento h2{
+    font-family: var(--font-tittle);
+}
+#secao-orcamento form{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.campo{
+    display: flex;
+    flex-direction: column;
+}
+.linha{
+    grid-column: 1 / 3;
+
+}
+
+input[type = radio],
+input[type = checkbox],
+input[type = range]
+{
+    accent-color: var(--color-destak);
 }
