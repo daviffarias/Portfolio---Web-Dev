@@ -1,8 +1,8 @@
 # Portifolio---Web-Dev
 
-- [ ] Header
+- [x] Header
     - [x] HTML
-    - [ ] CSS
+    - [x] CSS
 - [ ] Apresentação
 - [ ] Projetos
 - [ ] Conhecimentos
